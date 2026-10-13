@@ -11,7 +11,7 @@ class DecaEdge < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/resola-ai/edge-cli/releases/download/v0.1.1/edge_darwin_amd64.tar.gz"
-      sha256 "28a19e16cdbe7dc5fd599af5da66caf9dd38d15abfbb0ad89a426e6187a3fdc5"
+      sha256 "6051ca7656e12cd7bbd6678c2cfb447b9d3c40dcbafd4470fe9f354221a0f5b6"
 
       def install
         bin.install "edge"
@@ -22,7 +22,7 @@ class DecaEdge < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/resola-ai/edge-cli/releases/download/v0.1.1/edge_darwin_arm64.tar.gz"
-      sha256 "f4d36b9af9d300e851a47918999459ffc01d3e69bf616b8db9d0025ec560adbc"
+      sha256 "0e11126f90f1fafb6411428acfef2222778bdaaf42de381661140ebc8c1e2da1"
 
       def install
         bin.install "edge"
@@ -37,7 +37,7 @@ class DecaEdge < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/resola-ai/edge-cli/releases/download/v0.1.1/edge_linux_amd64.tar.gz"
-        sha256 "94b78812a9d482a76285d2eacc12ab4a73f317ef4175b3a986da76f1c4539d73"
+        sha256 "5a5b06065c5d771cd9cc16f143f3c6bc2dd74c842e5d44d152f38fa6d113e046"
 
         def install
           bin.install "edge"
@@ -50,7 +50,7 @@ class DecaEdge < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/resola-ai/edge-cli/releases/download/v0.1.1/edge_linux_arm64.tar.gz"
-        sha256 "7cd5ff125dbbdaedbf9251a393d2d84e8dff7b369768f1762b2c00f59fcabffb"
+        sha256 "dfa5cb4452b01d3231ef5dae91a4f24c177b957cc8fd2f7cd2d8a65c9cff4621"
 
         def install
           bin.install "edge"
