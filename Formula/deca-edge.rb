@@ -5,13 +5,13 @@
 class DecaEdge < Formula
   desc "Command-line interface for DECA Edge"
   homepage "https://docs.edge.deca.cloud/reference/cli.html"
-  version "0.1.1"
+  version "0.1.2"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/resola-ai/edge-cli/releases/download/v0.1.1/edge_darwin_amd64.tar.gz"
-      sha256 "6051ca7656e12cd7bbd6678c2cfb447b9d3c40dcbafd4470fe9f354221a0f5b6"
+      url "https://github.com/resola-ai/edge-cli/releases/download/v0.1.2/edge_darwin_amd64.tar.gz"
+      sha256 "43013c2938f538509b279309eaed56d568883b51114f385744687db8d1c0e0ca"
 
       def install
         bin.install "edge"
@@ -21,8 +21,8 @@ class DecaEdge < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/resola-ai/edge-cli/releases/download/v0.1.1/edge_darwin_arm64.tar.gz"
-      sha256 "0e11126f90f1fafb6411428acfef2222778bdaaf42de381661140ebc8c1e2da1"
+      url "https://github.com/resola-ai/edge-cli/releases/download/v0.1.2/edge_darwin_arm64.tar.gz"
+      sha256 "e18053987fbc0157f2253dd5849d6178c7ee703115371d2267691f473d7fd26d"
 
       def install
         bin.install "edge"
@@ -36,8 +36,8 @@ class DecaEdge < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/resola-ai/edge-cli/releases/download/v0.1.1/edge_linux_amd64.tar.gz"
-        sha256 "5a5b06065c5d771cd9cc16f143f3c6bc2dd74c842e5d44d152f38fa6d113e046"
+        url "https://github.com/resola-ai/edge-cli/releases/download/v0.1.2/edge_linux_amd64.tar.gz"
+        sha256 "d08ad68b92646a84d6153809dd45c2be90a421cf77c44efbc77d86cd3d037d10"
 
         def install
           bin.install "edge"
@@ -49,8 +49,8 @@ class DecaEdge < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/resola-ai/edge-cli/releases/download/v0.1.1/edge_linux_arm64.tar.gz"
-        sha256 "dfa5cb4452b01d3231ef5dae91a4f24c177b957cc8fd2f7cd2d8a65c9cff4621"
+        url "https://github.com/resola-ai/edge-cli/releases/download/v0.1.2/edge_linux_arm64.tar.gz"
+        sha256 "1566c8e937a399fdca493eeba4b07d21a332c30c9d65651680103f8d2a295da7"
 
         def install
           bin.install "edge"
